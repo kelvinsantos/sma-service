@@ -98,8 +98,8 @@ export default class SingaMetroAuthority {
       const getPeakSchedule = peakHours[dayOfWeek];
 
       const isPeakHour =
-        this.isTimeInRange(`${hours}:${minutes}`, getPeakSchedule?.startTime, getPeakSchedule?.endTime) ||
-        this.isTimeInRange(`${hours}:${minutes}`, getPeakSchedule?.startTime2, getPeakSchedule?.endTime2);
+        this.isTimeInRange(`${hours}:${minutes}`, getPeakSchedule.startTime, getPeakSchedule.endTime) ||
+        this.isTimeInRange(`${hours}:${minutes}`, getPeakSchedule.startTime2, getPeakSchedule.endTime2);
 
       return {
         isPeak: isPeakHour ? true : false,

@@ -38,6 +38,24 @@ describe('test calculateFare function', () => {
     expect(fare.fare).toBe(2);
   });
 
+  test('should return a alternate off-peak fare when given an alternate off-peak date', () => {
+    const sma = new SingaMetroAuthority(fareMatrix, peakHours, fareCapMatrix);
+    const fare = sma.calculateFare('green', 'green', new Date('2021-03-28T07:58:30'));
+    expect(fare).toHaveProperty('isPeak');
+    expect(fare).toHaveProperty('fare');
+    expect(fare.isPeak).toBe(false);
+    expect(fare.fare).toBe(1);
+  });
+
+  test('should return a peak fare when given an peak date', () => {
+    const sma = new SingaMetroAuthority(fareMatrix, peakHours, fareCapMatrix);
+    const fare = sma.calculateFare('green', 'green', new Date('2021-03-28T18:58:30'));
+    expect(fare).toHaveProperty('isPeak');
+    expect(fare).toHaveProperty('fare');
+    expect(fare.isPeak).toBe(true);
+    expect(fare.fare).toBe(2);
+  });
+
   test('should return an exception if the given parameters are invalid', () => {
     try {
       const sma = new SingaMetroAuthority(fareMatrix, peakHours, fareCapMatrix);
