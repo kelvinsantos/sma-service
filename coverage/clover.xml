@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1680774150947" clover="3.2.0">
+  <project timestamp="1680774150947" name="All files">
+    <metrics statements="45" coveredstatements="45" conditionals="12" coveredconditionals="12" methods="7" coveredmethods="7" elements="64" coveredelements="64" complexity="0" loc="45" ncloc="45" packages="1" files="2" classes="2"/>
+    <file name="app.ts" path="/Users/kelvinsantos/Development/personal/sma-service/src/app.ts">
+      <metrics statements="42" coveredstatements="42" conditionals="12" coveredconditionals="12" methods="7" coveredmethods="7"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="49" count="14" type="stmt"/>
+      <line num="50" count="14" type="stmt"/>
+      <line num="51" count="14" type="stmt"/>
+      <line num="62" count="6" type="stmt"/>
+      <line num="65" count="6" type="stmt"/>
+      <line num="66" count="6" type="stmt"/>
+      <line num="69" count="6" type="stmt"/>
+      <line num="70" count="6" type="stmt"/>
+      <line num="73" count="6" type="stmt"/>
+      <line num="76" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="77" count="2" type="stmt"/>
+      <line num="79" count="4" type="stmt"/>
+      <line num="91" count="4" type="stmt"/>
+      <line num="92" count="4" type="stmt"/>
+      <line num="93" count="4" type="stmt"/>
+      <line num="94" count="4" type="stmt"/>
+      <line num="96" count="4" type="stmt"/>
+      <line num="97" count="4" type="stmt"/>
+      <line num="98" count="4" type="stmt"/>
+      <line num="100" count="4" type="stmt"/>
+      <line num="105" count="1" type="stmt"/>
+      <line num="115" count="4" type="stmt"/>
+      <line num="116" count="4" type="stmt"/>
+      <line num="117" count="4" type="stmt"/>
+      <line num="118" count="4" type="stmt"/>
+      <line num="119" count="13" type="stmt"/>
+      <line num="120" count="13" type="stmt"/>
+      <line num="122" count="3" type="stmt"/>
+      <line num="129" count="1" type="stmt"/>
+      <line num="139" count="4" type="stmt"/>
+      <line num="140" count="4" type="stmt"/>
+      <line num="141" count="4" type="stmt"/>
+      <line num="142" count="4" type="stmt"/>
+      <line num="143" count="38" type="stmt"/>
+      <line num="144" count="38" type="stmt"/>
+      <line num="146" count="3" type="stmt"/>
+      <line num="153" count="1" type="stmt"/>
+    </file>
+    <file name="fares-config.ts" path="/Users/kelvinsantos/Development/personal/sma-service/src/fares-config.ts">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="57" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
