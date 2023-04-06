@@ -56,15 +56,15 @@ describe('test calculateDailyFare function', () => {
       toLine: 'green',
       dateTime: '2021-03-24T07:58:30',
       isPeak: false,
-      fare: 1,
+      fare: 1
     },
     {
       fromLine: 'green',
       toLine: 'green',
       dateTime: '2021-03-25T07:58:30',
       isPeak: false,
-      fare: 1,
-    },
+      fare: 1
+    }
   ];
 
   test('should return a valid dailyFare object if the given parameters are valid', () => {
@@ -89,29 +89,29 @@ describe('test calculateDailyFare function', () => {
         toLine: 'green',
         dateTime: '2021-03-25T08:58:30',
         isPeak: false,
-        fare: 2,
+        fare: 2
       },
       {
         fromLine: 'green',
         toLine: 'green',
         dateTime: '2021-03-25T08:59:30',
         isPeak: false,
-        fare: 2,
+        fare: 2
       },
       {
         fromLine: 'green',
         toLine: 'green',
         dateTime: '2021-03-25T09:58:30',
         isPeak: false,
-        fare: 2,
+        fare: 2
       },
       {
         fromLine: 'green',
         toLine: 'green',
         dateTime: '2021-03-25T09:59:30',
         isPeak: false,
-        fare: 2,
-      },
+        fare: 2
+      }
     ]);
     expect(dailyFare).toEqual({ totalFare: 10, fareCap: 8, totalFareSavings: 2, finalFare: 8 });
     expect(dailyFare.finalFare).toBe(dailyFare.fareCap);
@@ -127,8 +127,8 @@ describe('test calculateDailyFare function', () => {
           toLine: 'violet', // <- a line that doesn't exist
           dateTime: '2021-03-24T09:58:30',
           isPeak: true,
-          fare: 4,
-        },
+          fare: 4
+        }
       ]);
     } catch (e) {
       expect(e).toBeInstanceOf(SingaMetroAuthorityError);
@@ -144,15 +144,15 @@ describe('test calculateWeeklyFare function', () => {
       toLine: 'red',
       dateTime: '2021-03-25T11:58:30',
       isPeak: false,
-      fare: 2,
+      fare: 2
     },
     {
       fromLine: 'red',
       toLine: 'red',
       dateTime: '2021-03-26T11:58:30',
       isPeak: false,
-      fare: 2,
-    },
+      fare: 2
+    }
   ];
 
   test('should return a valid weeklyFare object if the given parameters are valid', () => {
@@ -177,204 +177,204 @@ describe('test calculateWeeklyFare function', () => {
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:59:30',
         isPeak: false,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
+        fare: 3
       },
       {
         fromLine: 'red',
         toLine: 'red',
         dateTime: '2021-03-27T11:58:30',
         isPeak: true,
-        fare: 3,
-      },
+        fare: 3
+      }
     ]);
     expect(weeklyFare).toEqual({ totalFare: 91, fareCap: 90, totalFareSavings: 1, finalFare: 90 });
     expect(weeklyFare.finalFare).toBe(weeklyFare.fareCap);
@@ -390,8 +390,8 @@ describe('test calculateWeeklyFare function', () => {
           toLine: 'violet', // <- a line that doesn't exist
           dateTime: '2021-03-26T11:58:30',
           isPeak: true,
-          fare: 2,
-        },
+          fare: 2
+        }
       ]);
     } catch (e) {
       expect(e).toBeInstanceOf(SingaMetroAuthorityError);

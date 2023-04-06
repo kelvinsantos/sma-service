@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1680774150947" clover="3.2.0">
-  <project timestamp="1680774150947" name="All files">
+<coverage generated="1680774724432" clover="3.2.0">
+  <project timestamp="1680774724432" name="All files">
     <metrics statements="45" coveredstatements="45" conditionals="12" coveredconditionals="12" methods="7" coveredmethods="7" elements="64" coveredelements="64" complexity="0" loc="45" ncloc="45" packages="1" files="2" classes="2"/>
     <file name="app.ts" path="/Users/kelvinsantos/Development/personal/sma-service/src/app.ts">
       <metrics statements="42" coveredstatements="42" conditionals="12" coveredconditionals="12" methods="7" coveredmethods="7"/>
